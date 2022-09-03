@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   body{
+
+   }
+</head>
+<body>
+   <marquee><h1>Your grades compliments</h1></marquee> 
+   <script>
+       var per=parseInt(prompt("Please enter your percentage"));
+        if(per<=40)
+        {
+            document.write("You have failled dumb.")
+        }
+        else if(per>40 && per<50){//&& is called 'AND' Checks 2 conditions
+            document.write("Your percentage is low. But You have passed. Make sure you study well otherwise your mother will not sing a lulaby for you (student says)I am not a baby I dont even know 1 lulaby.")
+        }
+        else if(per>=50 && per<65)
+        {
+            document.write("You have passed. You get C grade. Study well or be my driver!")
+        }
+        else if(per>=65 && per<75)
+        {
+            document.write("You have passed. You get B grade. Study well or be a handstand demonstrater even if you dont know how!!")
+        }
+        else if(per>=75 && per<90)
+        {
+            document.write("You have passed. You got A grade. Meh.")
+        }
+        else if(per>=90 && per<=100)
+        {
+            document.write("Congratulations you passed with A+ grade. Now your family and you can go for a vacaition ")
+        }
+        else{
+            document.write("You need to go to the nursery to learn again mathematics and your abc's!")
+        }
+   </script>
+</body>
+</html>

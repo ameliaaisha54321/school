@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("satellite image.jpg");
+            color: lime;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h1>JavaScript Function and Events</h1></marquee>
+   
+
+    </style>
+</head>
+<body>
+    <marquee><h1>JavaScript Function and Events</h1></marquee>
+    <input type="button" value="Click here to check" onclick="gradechecker()">
+    <script>
+        function gradechecker()
+        {
+            var per=parseInt(prompt("Please enter your percentage"));
+            if(per<=40)
+            {
+                document.write("You have failed")
+            }
+            else if(per>40 && per<50){//&& is called 'AND' Checks 2 conditions
+                document.write("Your percentage is low. But You have passed. Get outta here!!")
+            }
+            else if(per>=50 && per<65)
+            {
+                document.write("You have passed. You get C grade. make sure you Study well and improve your percentage")
+            }
+            else if(per>=65 && per<75)
+            {
+                document.write("You have passed. You get B grade. You are soooooooo dumb")
+            }
+            else if(per>=75 && per<90)
+            {
+                document.write("You have passed. You got A grade. Congratulations.")
+            }
+            else if(per>=90 && per<=100)
+            {
+                document.write("Congratulations you passed with A+ grade. Now you and your family will go to hawiwi for holiday ")
+            }
+            else{
+                document.write("Hey you need to go to 1st grade to learn again mathematics")
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/previews/002/335/722/original/school-supply-stationary-background-free-vector.jpg");
+            color:purple;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h1>DOM- Document Object Model</h1></marquee>
+    <h1>Grade checker</h1>
+    <label>Enter your percentage: </label>
+    <input type="number" id="per" placeholder="Grade">
+    <br/>
+    <input type="button" value="Click here to check" onclick="gradechecker()">
+    <p id="p1" style="color:palevioletred;">Your Output</p>
+    <script>
+        function gradechecker()
+        {
+            var per=document.getElementById("per").value;
+            if(per<=40)
+            {
+                document.getElementById("p1").innerHTML="You have failed how ca you be this stupid.";
+            }
+            else if(per>40 && per<50){//&& is called 'AND' Checks 2 conditions
+                document.getElementById("p1").idocument.getElementById("p1").innerHTML=nnerHTML=("Your percentage is low. But You have passed. Please study well otherwise your mother will not give you food!!!!!!")
+            }
+            else if(per>=50 && per<65)
+            {
+                document.getElementById("p1").innerHTML=("You have passed. You get C grade. Study well and improve your percentage")
+            }
+            else if(per>=65 && per<75)
+            {
+                document.getElementById("p1").innerHTML=("You have passed. You get B grade. You can perform better next time")
+            }
+            else if(per>=75 && per<90)
+            {
+                document.getElementById("p1").innerHTML=("You have passed. You got A grade. Congratulations.")
+            }
+            else if(per>=90 && per<=100)
+            {
+                document.getElementById("p1").innerHTML=("Congratulations you passed with A+ grade. Now your mom will buy a smartphone ")
+            }
+            else{
+                document.getElementById("p1").innerHTML=("Hey you need to go to 1st grade to learn again mathematics")
+            }
+        }
+    </script>
+</body>
+</html>
